@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JQM - Example 3</title>
+
+		<!-- import the various JQuery libraries from the local server -->
+		<link rel="stylesheet" href="libs/jquery.mobile-1.4.4/jquery.mobile-1.4.4.min.css" />
+		<script src="libs/jquery-1.11.1.min.js"></script>
+		<script src="libs/jquery.mobile-1.4.4/jquery.mobile-1.4.4.min.js"></script>
+
+		<!-- link your own style sheet too -->
+		<link rel="stylesheet" href="myStyle.css" />
+
+		<!-- your script for interactivity-->
+		<!-- depending on what you do you might want this at the bottom of the body -->
+		<script lanuage="javascript" src="main.js"></script>  
+
+		<!-- this tag resizes the viewport for mobile ... 
+		try commenting it out and see what happens on your device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	</head>
+
+	<body>
+
+		<div class="ui-content">
+	
+			<div class="textContainer ui-corner-all ui-overlay-shadow">
+				<h1>Fixed grid</h1>
+
+				<div class="ui-grid-a buttonContainer">
+
+					<!-- note how the columns wrap ... provided you keep to the order a, b, a, b -->
+					<!-- you can use empty divs to space elements -->
+
+					<div class="ui-block-a">
+						<button class="ui-btn ui-corner-all ui-btn-inline ui-btn-b ui-btn-icon-left ui-icon-arrow-r">Press me</button>
+					</div>
+					<div class="ui-block-b">
+						<button class="ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-refresh">Press me</button>
+					</div>
+
+					<div class="ui-block-a">
+						<a href="" class="ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-home">Press me</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="" class="ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-search">Press me</a>
+					</div>
+				</div>
+			</div>
+
+			<br/>
+
+			<div class="textContainer ui-corner-all ui-overlay-shadow">
+				<h1>Responsive grid</h1>
+				<div class="ui-grid-a buttonContainer my-breakpoint">
+					<div class="ui-block-a">
+						<button class="ui-btn ui-corner-all ui-btn-inline ui-btn-b ui-btn-icon-left ui-icon-arrow-r">Press me</button>
+					</div>
+					<div class="ui-block-b">
+						<button class="ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-refresh">Press me</button>
+					</div>
+
+					<div class="ui-block-a">
+						<a href="" class="ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-home">Press me</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="" class="ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-search">Press me</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+</html>

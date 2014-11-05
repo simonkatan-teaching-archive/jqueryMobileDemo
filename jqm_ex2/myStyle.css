@@ -1,0 +1,14 @@
+body{
+
+	text-align: center;
+}
+
+.textContainer {
+
+	min-width: 100px;
+	min-height: 100px;
+	padding: 10px;
+	background-color: black;
+	color: white;
+
+}

@@ -1,0 +1,61 @@
+body{
+
+	text-align: center;
+}
+
+.textContainer {
+
+	min-width: 100px;
+	min-height: 100px;
+	padding: 10px 2px;
+	background-color: black;
+	color: white;
+
+}
+
+
+/* auto left and right margins center the div */
+
+.buttonContainer{
+	margin: auto; 
+	width: 270px;
+}
+
+
+/* this is a media query ... css checks the size of the device */
+
+/* 
+	multiply the em value by 16 px to get the screen width 
+	this is becasue the default font size is 16 px
+*/
+
+/* this one checks for small devices */
+
+@media all and (max-width: 50em) { 
+  .my-breakpoint .ui-block-a,
+  .my-breakpoint .ui-block-b
+  {
+    width: 100%;
+    float:none;
+  }
+}
+
+/* this one checks for wide devices */
+/* if the device is really wide we do something else  ... probably better than this */
+
+@media all and (min-width: 75em) {
+
+	.my-breakpoint .ui-block-a { background-color: blue;}
+	.my-breakpoint .ui-block-b { background-color: cyan;}
+}
+
+/* 
+
+!!!!!!!!!!!!!!!!!!!IMPORTANT!!!!!!!!!!!!!!!!!!!!!!
+
+You should use a mobile first strategy ... 
+Design for the smallest device and 
+progress using media queries to the largest device
+
+*/
+
